@@ -1,0 +1,108 @@
+@media screen and (max-width:800px) {
+    body {
+      grid-template-columns: auto !important;
+      grid-template-rows: 80px auto 75px !important;
+    }
+
+    header {
+      grid-column: 1 !important;
+      grid-row: 1 !important;
+      justify-content: unset !important;
+      border-bottom: 2px solid #EFEFEF;
+      position: fixed !important;
+      top: 0;
+      width: 100%;
+      background-color: white;
+      z-index: 1 !important;
+    }
+
+    header a {
+      padding: 10px 20px;
+    }
+
+    header h1 {
+      font-size: 20px;
+    }
+
+    nav {
+      display: none !important;
+    }
+
+    .icon {
+      display: block !important;
+      position: fixed;
+      top: 30px;
+      right: 20px;
+      z-index: 1 !important;
+    }
+
+    .navig.responsive {
+        position: fixed;
+        height: 400px;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: unset;
+        align-items: unset;
+        background-color: white;
+        width: 100%;
+    }
+
+    .navig.responsive a {
+        float: none;
+        display: block !important;
+        text-align: left;
+    }
+
+    #sideNav {
+      display: none !important;
+    }
+
+    #main {
+      grid-column: 1 !important;
+      grid-row: 2 !important;
+      z-index: 0 !important;
+      padding: 10px !important;
+    }
+
+    #main.index {
+      padding: 0 !important;
+    }
+
+    #main img {
+      display: flex !important;
+      width: 100%;
+    }
+
+    #produits {
+      justify-content: center;
+    }
+
+    .commentaire form {
+      flex-direction: column !important;
+    }
+
+    .commentaire input {
+      margin: 10px 0 !important;
+    }
+
+    .reponse {
+      width: 80% !important;
+      align-self: center !important;
+    }
+
+    .question {
+      width: 80% !important;
+      align-self: center !important;
+    }
+
+    .homeHeader {
+      background-image: none !important;
+      margin-top: unset !important;
+      height: unset !important;
+    }
+
+    footer {
+      grid-column: 1 !important;
+      grid-row: 3 !important;
+    }
+}

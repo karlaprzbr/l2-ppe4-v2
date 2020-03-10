@@ -1,0 +1,317 @@
+@import url("media.css");
+
+/** GLOBAL **/
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    grid-template-rows: 75px 75px auto 75px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, a:hover, li, td, .button {
+    color: #444;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.button {
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #444;
+  cursor: pointer;
+  height: 30px;
+}
+
+.button:hover {
+  background-color: grey;
+}
+
+.text {
+  width: 100%;
+  border-top: none;
+  border-right: none;
+  border-bottom: 2px solid #efefef;
+  border-left: none;
+  cursor: text;
+}
+
+/** HEADER **/
+header {
+    grid-row: 1;
+    grid-column: 1 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    height: 40px;
+}
+
+header h1 {
+    font-family: 'Permanent Marker', cursive;
+}
+
+header h1 span {
+    font-family: 'Walter Turncoat', cursive;
+}
+
+.icon, header a:not(:first-of-type) {
+  display: none;
+}
+
+/** NAVBAR **/
+nav {
+    grid-row: 2;
+    grid-column: 1 / 4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #EFEFEF;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 20px 0 0;
+    font-weight: bold;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav i {
+    padding: 10px;
+    margin: 0 0 0 10px;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+nav #icons {
+    display: inline-flex;
+}
+
+nav input {
+    border: none;
+    width: 150px;
+}
+
+nav button {
+    border: none;
+    background-color: inherit;
+}
+
+nav button:hover {
+    cursor: pointer;
+}
+
+nav form {
+    border-bottom: 2px solid #EFEFEF;
+}
+
+/** SIDENAV **/
+#sideNav {
+    grid-row: 3;
+    grid-column: 1;
+}
+
+#sideNav a {
+    display: block;
+}
+
+#sideNav p {
+    font-weight: bold;
+}
+
+#contenu {
+  position: sticky;
+  top: 100px;
+  z-index: 1;
+  background-color: white;
+}
+
+/** MAIN **/
+#main {
+    grid-row: 3;
+    grid-column: 2;
+    z-index: 0;
+    padding: 20px 0;
+}
+
+#main .homeHeader {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/home.jpeg);
+    background-size: cover;
+    height: 600px;
+}
+
+#main .homeHeader h1 {
+    color: white;
+    text-align: center;
+    background-color: black;
+    padding: 10px;
+}
+
+#main img.banniere {
+  display: none;
+}
+
+/** COMMENTAIRES **/
+.commentaire {
+  background-color: #EFEFEF;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.commentaire form {
+  display: flex;
+  flex-direction: row;
+}
+
+.commentaire form input {
+  margin:10px;
+  height: 25px;
+}
+
+.reponse {
+  width: 40%;
+  background-color: white;
+  align-self: flex-end;
+  padding: 0 10px;
+  margin: 10px;
+}
+
+.question {
+  width: 40%;
+  background-color: white;
+  align-self: flex-start;
+  padding: 0 10px;
+  margin: 10px;
+}
+
+/** CONNEXION MAIN **/
+
+.conMain {
+    margin: 200px auto;
+}
+
+.conMain h3, .conMain p {
+    text-align: center;
+}
+
+.conMain a {
+    text-decoration: underline;
+}
+
+.conMain form {
+    display: block;
+    width: 400px;
+}
+
+.conMain input {
+    width: 100%;
+    border-top: none;
+    border-right: none;
+    border-bottom: 2px solid #efefef;
+    border-left: none;
+    cursor: text;
+}
+
+.conMain label {
+    width: 100%;
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.conMain button {
+    margin: 20px 0;
+    border: none;
+    width: 100%;
+    height: 30px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+/** PRODUIT MAIN **/
+#produits img {
+  width: 200px;
+}
+
+#produits {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.produit {
+  margin: 20px;
+  border: 2px solid #EFEFEF;
+  width: 200px;
+}
+
+.produit p {
+  margin: 0;
+  padding: 10px;
+}
+
+.title {
+  background-color: #EFEFEF;
+}
+
+/** CATEGORES MAIN **/
+#phoneCateg ul, #phoneCateg li {
+  list-style-type: none;
+}
+
+#phoneCateg .bold {
+  font-weight: bold;
+}
+
+/** FOOTER **/
+footer {
+    grid-row: 4;
+    grid-column: 1 / 4;
+    background-color: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p, footer a, footer a:hover {
+    color: white;
+    font-size: 18px;
+}
+
+footer .marque {
+    font-family: 'Permanent Marker', cursive;
+}
+
+footer .desc {
+    font-family: 'Walter Turncoat', cursive;
+}
